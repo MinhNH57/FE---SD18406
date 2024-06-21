@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body ng-app="myApp">
+  <div ng-controller="myController">
+    <h2 ng-bind="a" class="text-center"></h2>
+
+    <div class="text-center">
+      <input type="text" class="" placeholder="Tìm kiếm..." ng-model="search" />
+      <select class="my-3" ng-model="orderByField" ng-change="reverse = !reverse">
+        <option value="hoTen">Họ tên</option>
+        <option value="diaChi">Địa chỉ</option>
+        <option value="Sdt">SĐT</option>
+        <option value="gioiTinh">Giới tính</option>
+        <option value="ngaySinh">Ngày sinh</option>
+        <option value="Luong">Lương</option>
+      </select>
+      <input type="number" placeholder="Số lượng bản ghi" ng-model="recordLimit" />
+    </div>
+
+    <input type="text" class="form-control" ng-model="a">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Phone number</th>
+          <th>Gender</th>
+          <th>Bird date</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="item in lstPX| filter:{hoTen: search} | orderBy:orderByField:reverse | limitTo:recordLimit">
+          <td>{{$index + 1}}</td>
+          <td>{{item.hoTen}}</td>
+          <td>{{item.diaChi}}</td>
+          <td>{{item.Sdt}}</td>
+          <td>{{item.gioiTinh == 0 ? "Nam" : "Nữ"}}</td>
+          <td>{{item.ngaySinh | date : "dd/MM/yyyy"}}</td>
+          <td>{{item.Luong | currency : "" : 0 }}đ</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
+<script src="./Buoi6.js">
+</script>
+
+</html>

@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "bf53",
+      "name": "Nguyễn Hồng Minh",
+      "phone": "0981688583",
+      "email": "nutmsotn04@gmail.com",
+      "NgaySinh": "2003-12-31T17:00:00.000Z"
+    },
+    {
+      "id": "16a1",
+      "name": "Nguyễn Văn Quyết",
+      "phone": "0378955687",
+      "email": "namchu2003x1@gmail.com",
+      "NgaySinh": "2004-11-11T17:00:00.000Z"
+    }
+  ]
+}

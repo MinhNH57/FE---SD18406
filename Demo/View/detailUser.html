@@ -1,0 +1,32 @@
+<div class="card my-5">
+    <h5>{{title}}</h5>
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+                <label for="" class="form-label">Ho va ten</label>
+                <input type="text" class="form-control" name="name" ng-model="userInput.name" disabled>
+
+                <div class="mb-3">
+                    <label for="" class="form-label">Phone</label>
+                    <input type="text" class="form-control" name="phone" ng-model="userInput.phone" disabled >
+                </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label">Email</label>
+                    <input type="text" class="form-control" name="email" ng-model="userInput.email" disabled>
+                </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label">Ngay sinh</label>
+                    <input type="date" class="form-control" name="NgaySinh" ng-model="userInput.NgaySinh" disabled>
+                </div>
+
+            </div>
+
+            <div class="mb-3 me-3 d-flex justify-content-center">
+                <a href="#!/edit-user/{{ userInput.id }}" class="btn btn-warning">Update</a>
+            </div>
+        </form>
+
+    </div>
+</div>

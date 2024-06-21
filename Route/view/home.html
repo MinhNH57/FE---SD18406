@@ -1,0 +1,17 @@
+<div class="card-body mx-auto my-auto" style="width: 30%;">
+    <form ng-submit="check()">
+        <label for="taiKhoan" class="form-label my-3">Tài khoản</label>
+        <input type="text" id="taiKhoan" class="form-control" ng-class="{'is-invalid': loiTaiKhoan}" ng-model="TaiKhoan" ng-change="validateTaiKhoan()"/>
+        <div class="invalid-feedback" ng-if="loiTaiKhoan">{{ loiTaiKhoan }}</div>
+        
+        <label for="matKhau" class="form-label my-3">Mật khẩu</label>
+        <input type="text" id="matKhau" class="form-control" ng-class="{'is-invalid': loiMatKhau}" ng-model="MatKhau"/>
+        <div class="invalid-feedback" ng-if="loiMatKhau">{{ loiMatKhau }}</div>
+        
+        <div class="text-center">
+            <button type="submit" class="btn btn-success my-5 px-5">
+                Login
+            </button>
+        </div>
+    </form>
+</div>

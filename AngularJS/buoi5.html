@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body ng-app="myApp">
+    <!-- Khai bao 1 vung controller
+    Moi mot vung se co nhiem vu nhat dinh -->
+    <div ng-controller="myController">
+        <!-- Cach hien thi du lieu -->
+        <h1>
+            {{a}}
+        </h1>
+
+        <h2 ng-bind="a"></h2>
+    </div>
+
+    <div ng-controller="myController2">
+        <h1 ng-bind="b"> </h1>
+        <h1 ng-bind="c"></h1>
+    </div>
+</body>
+<!-- cach su dung thu vien Anguler JS -->
+<!-- Canh 1 : Download thu vien -->
+
+<!-- <script src="./libs/angular.min.js"></script> -->
+
+<!-- Cach 2 : Su dung link online -->
+<script src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
+
+<script>
+    //Khoi tao madule
+    //Truyen vao hai tham so : vufng ng-app , thanh phan phu thuc
+    let q = angular.module("myApp", []);
+
+    q.controller("myController", myfuc);
+    function myfuc($scope) {
+        console.log("Nguyen Hong Minh");
+        $scope.a = "Vinh Loc - Phung Xa";
+        console.log($scope.a);
+    }
+
+    q.controller("myController2", mydfuc2);
+    function mydfuc2($scope) {
+        $scope.b = "Nguyen Thi Tu Anh";
+        $scope.c = "2005"
+    }
+
+    //Khai bao va dinh nghia mot vung controller moi
+    //HIen th ra cac thong tin cua nguoi yeu cu
+</script>
+
+</html>

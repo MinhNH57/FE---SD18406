@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+    <style>
+        .bang-tot-nghiep-preview {
+            width: 100%;
+            height: 141.38px;
+            overflow-y: hidden;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body class="h-100">
+    <div class="container-fluid p-0">
+
+        <div class="banner">
+            <img class="banner-desktop w-100"
+                srcset="https://caodang.fpt.edu.vn/wp-content/themes/fpoly/assets-custom/images/Banner.png" alt="">
+        </div>
+
+        <div class="banner-bg"
+            style="background-image: url('https://caodang.fpt.edu.vn/wp-content/themes/fpoly/assets-custom/images/bg-register.jpg');padding-top: 50px;">
+            <h1 class="text-center fs-1 p-2 fw-bolder" style="color: rgb(46 49 146);">PHIẾU ĐĂNG KÝ HỌC</h1>
+            <div class="row">
+                <div class="col-1">
+
+                </div>
+                <div class="col-10">
+
+                    <div class="card mx-auto">
+                        <div class="card-body">
+                            <form>
+                                <h3>
+                                    <i class="bi bi-exclamation-square-fill"></i>
+                                    THÔNG TIN THÍ SINH
+                                </h3>
+                                <div class="row py-3">
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Họ và tên</label>
+                                        <input class="form-control" id="exampleFormControlInput1">
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <label for="exampleFormControlInput2" class="form-label">Ngày sinh</label>
+                                        <input class="form-control" id="exampleFormControlInput2">
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <label for="clubSelect" class="form-label">Giới tính</label>
+                                        <select class="form-select" id="clubSelect">
+                                            <option value="club1">Nam</option>
+                                            <option value="club2">Nữ</option>
+                                            <!-- Thêm các option khác nếu cần -->
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <label for="exampleFormControlInput2" class="form-label">Dân tộc</label>
+                                        <input class="form-control" id="exampleFormControlInput2">
+                                    </div>
+
+                                </div>
+
+                                <div class="row py-3">
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">CCCD/Chứng minh nhân
+                                            dân</label>
+                                        <input class="form-control" id="exampleFormControlInput1">
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Ngày cấp</label>
+                                        <input class="form-control" id="exampleFormControlInput1">
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Nơi cấp</label>
+                                        <input class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                </div>
+
+                                <div class="row py-3">
+                                    <h6 class="fw-bolder">Nơi thường trú (Điền thông tin đầy đủ như trong CMND/CCCD)
+                                    </h6>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <select class="form-select" id="clubSelect">
+                                            <option selected>Chọn tỉnh/Thành phố</option>
+                                            <option value="club1">Hà Nội</option>
+                                            <option value="club2">Hà tây</option>
+                                            <!-- Thêm các option khác nếu cần -->
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <select class="form-select" id="clubSelect">
+                                            <option selected>Quận/Huyện</option>
+                                            <option value="club1">Thạch Thất</option>
+                                            <option value="club2">Nam Từ Liêm</option>
+                                            <!-- Thêm các option khác nếu cần -->
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <select class="form-select" id="clubSelect">
+                                            <option selected>Xã/Phường/Thị Trấn</option>
+                                            <option value="club1">Phùng Xá</option>
+                                            <option value="club2">Hữu Bằng</option>
+                                            <!-- Thêm các option khác nếu cần -->
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <input class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Số nhà , xóm , ngõ ..">
+                                    </div>
+                                </div>
+
+                                <div class="row py-3">
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Số điện thoại</label>
+                                        <input class="form-control" id="exampleFormControlInput1">
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Email thí sinh*</label>
+                                        <input class="form-control" id="exampleFormControlInput1">
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Họ tên phụ huynh/người
+                                            bảo trợ</label>
+                                        <input class="form-control" id="exampleFormControlInput1">
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <label for="exampleFormControlInput2" class="form-label">Số điện thoại phụ
+                                            huynh/người bảo trợ</label>
+                                        <input class="form-control" id="exampleFormControlInput2">
+                                    </div>
+                                </div>
+                                <h3>
+                                    <i class="bi bi-exclamation-square-fill"></i>
+                                    THÔNG TIN ĐĂNG KÝ TRƯỜNG CAO ĐẲNG FPT POLYTECHNIC
+                                </h3>
+                                <div class="row py-3">
+
+
+                                    <div class="col-12 col-sm-6 col-md-6">
+                                        <label for="clubSelect" class="form-label">Cơ sở nhập học</label>
+                                        <select class="form-select" id="clubSelect">
+                                            <option selected>Chọn cơ sở nhập học</option>
+                                            <option value="club1">Phùng Xá</option>
+                                            <option value="club2">Hữu Bằng</option>
+                                            <!-- Thêm các option khác nếu cần -->
+                                        </select>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="row py-3">
+                                    <div class="col-12 col-sm-6 col-md-6">
+                                        <label class="gfield_label gform-field-label" for="input_50_20">Nguyện vọng thứ
+                                            nhất</label>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-md-6">
+                                                <select class="form-select" id="clubSelect1">
+                                                    <option selected>Chuyên nghành</option>
+                                                    <option value="club1">Phùng Xá</option>
+                                                    <option value="club2">Hữu Bằng</option>
+                                                    <!-- Thêm các option khác nếu cần -->
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-6">
+                                                <select class="form-select" id="clubSelect2">
+                                                    <option selected>Nghành</option>
+                                                    <option value="club1">Phùng Xá</option>
+                                                    <option value="club2">Hữu Bằng</option>
+                                                    <!-- Thêm các option khác nếu cần -->
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-6">
+                                        <label class="gfield_label gform-field-label" for="input_50_21">Nguyện vọng thứ
+                                            hai</label>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-md-6">
+                                                <select class="form-select" id="clubSelect1">
+                                                    <option selected>Chuyên nghành</option>
+                                                    <option value="club1">Phùng Xá</option>
+                                                    <option value="club2">Hữu Bằng</option>
+                                                    <!-- Thêm các option khác nếu cần -->
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-6">
+                                                <select class="form-select" id="clubSelect2">
+                                                    <option selected>Nghành</option>
+                                                    <option value="club1">Phùng Xá</option>
+                                                    <option value="club2">Hữu Bằng</option>
+                                                    <!-- Thêm các option khác nếu cần -->
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row py-3">
+                                    <div class="col-12 col-sm-6 col-md-6">
+                                        <label class="gfield_label gform-field-label" for="input_50_35">Năm tốt nghiệp
+                                            THPT hoặc tương đương</label>
+                                        <select class="form-select" id="clubSelect2">
+                                            <option selected>2024</option>
+                                            <option value="club1">2021</option>
+                                            <option value="club2">2022</option>
+                                            <!-- Thêm các option khác nếu cần -->
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-6">
+                                        <label class="gfield_label gform-field-label" for="input_50_25">Trường tốt
+                                            nghiệp THPT hoặc tương đương</label>
+                                        <input class="form-control" id="exampleFormControlInput1" placeholder="Trường"
+                                            style="height: 50px;">
+                                    </div>
+                                </div>
+
+                                <div class="row py-3">
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <select class="form-select" id="clubSelect2">
+                                            <option selected>Chọn tỉnh/thành phố</option>
+                                            <option value="club1">2021</option>
+                                            <option value="club2">2022</option>
+                                            <!-- Thêm các option khác nếu cần -->
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <select class="form-select" id="clubSelect2">
+                                            <option selected>Quận/Huyện</option>
+                                            <option value="club1">2021</option>
+                                            <option value="club2">2022</option>
+                                            <!-- Thêm các option khác nếu cần -->
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <select class="form-select" id="clubSelect2">
+                                            <option selected>Phường/Xã/Thị trấn</option>
+                                            <option value="club1">2021</option>
+                                            <option value="club2">2022</option>
+                                            <!-- Thêm các option khác nếu cần -->
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <h3>
+                                    <i class="bi bi-exclamation-square-fill"></i>
+                                    THÔNG TIN NHẬN GIẤY BÁO KẾT QUẢ
+                                </h3>
+
+                                <div class="row py-3">
+                                    <div class="col-12 col-sm-6 col-md-6">
+                                        <div class="row">
+
+                                            <div class="col-12 col-sm-6 col-md-12">
+                                                <label
+                                                    class="gfield_label gform-field-label gfield_label_before_complex">Người
+                                                    nhận</label>
+                                            </div>
+
+                                            <div class="col-12 col-sm-6 col-md-12">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Thí sinh
+                                                </label>
+                                            </div>
+
+                                            <div class="col-12 col-sm-6 col-md-12">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Phụ huynh
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-6">
+                                        <div class="row py-3">
+                                            <div class="col-12 col-sm-6 col-md-12">
+                                                <label
+                                                    class="gfield_label gform-field-label gfield_label_before_complex">Địa
+                                                    chỉ nhận</label>
+                                            </div>
+
+                                            <div class="col-12 col-sm-6 col-md-12">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Địa chỉ thường chú
+                                                </label>
+                                            </div>
+
+                                            <div class="col-12 col-sm-6 col-md-12">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Khác
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3>
+                                    <i class="bi bi-exclamation-square-fill"></i>
+                                    TẢI LÊN GIẤY TỜ HỒ SƠ ĐĂNG KÝ HỌC
+                                </h3>
+
+                                <div class="row py-3">
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <label class="gfield_label" for="input_32_42">Ảnh CMND/CCCD mặt trước</label>
+                                        <div class="bang-tot-nghiep-preview" style="overflow-y: hidden;">
+                                            <img id="img_preview_32_42"
+                                                srcset="https://caodang.fpt.edu.vn/wp-content/themes/fpoly/assets-custom/images/cccd-mt.png"
+                                                width="100%">
+                                        </div>
+                                        <input name="input_42" id="input_32_42" type="file" class="medium"
+                                            aria-describedby="validation_message_32_42 live_validation_message_32_42 extensions_message_32_42">
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <label class="gfield_label" for="input_32_43">Ảnh CMND/CCCD mặt sau</label>
+                                        <div class="bang-tot-nghiep-preview" style="overflow-y: hidden;">
+                                            <img id="img_preview_32_43"
+                                                srcset="https://caodang.fpt.edu.vn/wp-content/themes/fpoly/assets-custom/images/cccd-ms.png"
+                                                width="100%">
+                                        </div>
+                                        <input name="input_42" id="input_32_42" type="file" class="medium"
+                                            aria-describedby="validation_message_32_42 live_validation_message_32_42 extensions_message_32_42">
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-6">
+                                        <label class="gfield_label" for="input_32_44">Bản sao công chứng Bằng tốt nghiệp
+                                            THPT</label>
+                                        <div class="bang-tot-nghiep-preview" style="overflow-y: hidden;">
+                                            <img id="img_preview_32_44"
+                                                srcset="https://caodang.fpt.edu.vn/wp-content/themes/fpoly/assets-custom/images/bang-tot-nghiep-thpt.png"
+                                                width="100%">
+                                        </div>
+                                        <input name="input_42" id="input_32_42" type="file" class="medium"
+                                            aria-describedby="validation_message_32_42 live_validation_message_32_42 extensions_message_32_42">
+                                    </div>
+                                </div>
+
+                                <h3>
+                                    <i class="bi bi-exclamation-square-fill"></i>
+                                    TẢI LÊN GIẤY TỜ HỒ SƠ ĐĂNG KÝ HỌC
+                                </h3>
+
+                                <p id="loai_th_1"><span>Nhằm khuyến khích những bạn trẻ đam mê học tập. Tạo điều kiện
+                                        thuận lợi cho các bạn học sinh, sinh viên tiếp cận chương trình đào tạo chất
+                                        lượng, xây dựng nghề nghiệp vững chắc. <b>Trường Cao đẳng FPT Polytechnic triển
+                                            khai Học bổng Thắp sáng tương lai với tổng trị giá lên đến 80 tỷ
+                                            VNĐ.</b></span></p>
+                                <h3 id="text_nhapdiem" class="text fs-6 fw-bolder">Nhập điểm trung bình của 01 trong 06
+                                    môn lớp 11 hoặc 12 (Toán, Tin học, Tiếng Anh, Hội hoạ, Âm nhạc) để xem mức ưu đãi và
+                                    học bổng bạn sẽ đạt được:</h3>
+
+                                <div class="row py-3">
+                                    <div class="col-12 col-sm-6 col-md-6">
+                                        <label class="gfield_label text fs-6" for="input_32_44">Nhập thông tin môn
+                                            toán</label>
+                                        <select class="form-select" id="clubSelect2">
+                                            <option selected>Toán</option>
+                                            <!-- Thêm các option khác nếu cần -->
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <label class="gfield_label text fs-6" for="exampleFormControlInput2">Nhập điểm
+                                            học bạ (Lớp 11 hoặc 12)</label>
+                                        <input class="form-control" id="exampleFormControlInput2">
+                                        <label>Điểm số từ 0 đến 10 gồm cả số thập phân</label>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+
+                                    </div>
+                                </div>
+
+                                <div class="row py-3">
+                                    <div class="col-12 col-sm-6 col-md-6">
+                                        <label class="gfield_label text fs-6 fw-bolder" for="input_32_44">Nhập thông tin
+                                            môn tin học</label>
+                                        <select class="form-select" id="clubSelect2">
+                                            <option selected>Tin học</option>
+                                            <!-- Thêm các option khác nếu cần -->
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <label class="gfield_label text fs-6 fw-bolder"
+                                            for="exampleFormControlInput2">Nhập điểm học bạ (Lớp 11 hoặc 12)</label>
+                                        <input class="form-control" id="exampleFormControlInput2">
+                                        <label>Điểm số từ 0 đến 10 gồm cả số thập phân</label>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+
+                                    </div>
+                                </div>
+
+                                <div class="row py-3">
+                                    <div class="col-12 col-sm-6 col-md-6">
+                                        <label class="gfield_label text fs-6 fw-bolder" for="input_32_44">Nhập thông tin
+                                            môn Tiếng anh</label>
+                                        <select class="form-select" id="clubSelect2">
+                                            <option selected>Tiếng anh</option>
+                                            <!-- Thêm các option khác nếu cần -->
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <label class="gfield_label text fs-6 fw-bolder"
+                                            for="exampleFormControlInput2">Nhập điểm học bạ (Lớp 11 hoặc 12)</label>
+                                        <input class="form-control" id="exampleFormControlInput2">
+                                        <label>Điểm số từ 0 đến 10 gồm cả số thập phân</label>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+
+                                    </div>
+                                </div>
+
+                                <div class="row py-3">
+                                    <div class="col-12 col-sm-6 col-md-6">
+                                        <label class="gfield_label text fs-6 fw-bolder" for="input_32_44">Nhập thông tin
+                                            môn năng khiếu</label>
+                                        <select class="form-select" id="clubSelect2">
+                                            <option selected>Chọn môn</option>
+                                            <!-- Thêm các option khác nếu cần -->
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <label class="gfield_label text fs-6 fw-bolder"
+                                            for="exampleFormControlInput2">Nhập điểm học bạ (Lớp 11 hoặc 12)</label>
+                                        <input class="form-control" id="exampleFormControlInput2">
+                                        <label>Điểm số từ 0 đến 10 gồm cả số thập phân</label>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+
+                                    </div>
+                                </div>
+
+                                <div class="row py-3">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 col-md-12">
+                                        <div class="card" style="background-color: navy;">
+                                            <div class="card-body text text-white">
+                                                <b>Với điểm học bạ trên, bạn đủ điều kiện xét duyệt mức ưu đãi/học bổng
+                                                    như sau: </b>
+                                                <ul class="mt-3">
+                                                    <li>Ưu đãi miễn Học phí kỳ định hướng 2.600.000 VNĐ <span
+                                                            data-id="1" class="text text-danger">Xem chi tiết</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row py-3">
+                                        <div class="col-12 col-sm-6 col-md-6">
+                                            <label class="gfield_label" for="input_32_44">Ảnh học bạ lớp 11, hoặc lớp
+                                                12</label>
+                                            <div class="bang-tot-nghiep-preview">
+                                                <img id="img_preview_47_44"
+                                                    srcset="https://caodang.fpt.edu.vn/wp-content/uploads/2024/01/anh-minh-hoa-hoc-ba-9464-1.jpg"
+                                                    width="100%">
+                                            </div>
+                                            <div class="ginput_container ginput_container_fileupload">
+                                                <input name="hb_input_44[]" id="hb_input_47_44" type="file"
+                                                    class="medium" multiple=""
+                                                    aria-describedby="validation_message_47_44 live_validation_message_47_44 extensions_message_47_44"
+                                                    required="">
+                                            </div>
+                                            <p><i>Tải 1 hoặc nhiều files (tối đa 3 files)</i></p>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-6">
+                                            <label class="gfield_label" for="input_32_44">Ảnh bằng khen, hoặc chứng chỉ,
+                                                hoặc chứng nhận các thành tích đạt được</label>
+                                            <div class="bang-tot-nghiep-preview">
+                                                <img id="img_preview_47_45"
+                                                    srcset="https://caodang.fpt.edu.vn/wp-content/uploads/2024/01/chungnhan2.png"
+                                                    width="100%" height="100%">
+                                            </div>
+                                            <div class="ginput_container ginput_container_fileupload">
+                                                <input name="hb_input_44[]" id="hb_input_47_44" type="file"
+                                                    class="medium" multiple=""
+                                                    aria-describedby="validation_message_47_44 live_validation_message_47_44 extensions_message_47_44"
+                                                    required="">
+                                            </div>
+                                            <p><i>Tải 1 hoặc nhiều files (tối đa 3 files)</i></p>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="fw-bolder">
+                                        Lưu ý
+                                    </h4>
+
+                                    <div class="row py-3">
+                                        <div class="col-12 col-sm-6 col-md-12">
+                                            <ul id="note_th_1">
+                                                <li>Học bổng/ưu đãi tính theo mức học phí thực tế của cơ sở mà sinh viên
+                                                    theo học.</li>
+                                                <li>Trường hợp sinh viên chuyển giữa các cơ sở vẫn được hưởng chính sách
+                                                    này, tính theo mức học phí của cơ sở mà sinh viên chuyển đến.</li>
+                                                <li>Trường hợp học phí có sự điều chỉnh (tăng hoặc giảm) thì học bổng/ưu
+                                                    đãi khi đó tính theo mức học phí sau điều chỉnh.</li>
+                                                <li>Học bổng/ưu đãi sẽ được khấu trừ trực tiếp vào các lần đóng học phí
+                                                    (Không bao gồm phí học lại).</li>
+                                                <li>Học bổng/ưu đãi không bao gồm các khoản phí và lệ phí khác ngoài học
+                                                    phí.</li>
+                                                <li>Các loại học bổng/ưu đãi trên là đích danh, không thể chuyển nhượng
+                                                    cho người khác và không có giá trị quy đổi thành tiền.</li>
+                                                <li>Trường hợp thí sinh thuộc diện được cấp nhiều loại học bổng và ưu
+                                                    đãi thì chỉ được chọn 01 loại học bổng/ưu đãi có giá trị lớn nhất.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="row py-3">
+                                        <div class="col-12 col-sm-6 col-md-6">
+
+                                            <label for="choice_32_39_1" id="label_32_39">
+                                                <input required="" name="cam_ket_xac_nhan" type="checkbox"
+                                                    value="cam kết lời khai" id="choice_32_39_1"> Tôi xin cam đoan những
+                                                lời khai của tôi trên phiếu đăng ký này là đúng sự thật. Nếu sai tôi
+                                                hoàn toàn chịu trách nhiệm và nhận xử lý theo <a style="color: #1A0EAB;"
+                                                    href="https://caodang.fpt.edu.vn/tuyen-sinh/quy-che.html"
+                                                    target="_blank">Quy chế tuyển sinh</a> cao đẳng hiện hành</label>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row py-3">
+                                        <div class="col-12 col-sm-6 col-md-6">
+
+                                            <label for="choice_32_39_1" id="label_32_39">
+                                                <input required="" name="cam_ket_xac_nhan" type="checkbox"
+                                                    value="cam kết lời khai" id="choice_32_39_1">Tôi đã đọc kỹ và cam
+                                                kết tuân thủ Quy định tài chính của nhà trường</label>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center pt-5 w-100">
+                                        <button type="button" class="bg-black p-3">
+                                            <p class="m-0 px-4" style="color: white;">GỬI HỒ SƠ ĐĂNG KÝ</p>
+                                        </button>
+                                    </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 100px;">
+
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

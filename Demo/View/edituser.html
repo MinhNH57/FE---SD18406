@@ -1,0 +1,36 @@
+<div class="card my-5">
+    <h5>{{title}}</h5>
+    <div class="card-body">
+        <form ng-submit="UpdateUSer()">
+            <div class="mb-3">
+                <label for="" class="form-label">Ho va ten</label>
+                <input type="text" class="form-control" name="name" ng-model="userInput.name">
+                <p class="text-danger" ng-if="kiemTra.name">Vui lòng nhập họ tên</p>
+
+                <div class="mb-3">
+                    <label for="" class="form-label">Phone</label>
+                    <input type="text" class="form-control" name="phone" ng-model="userInput.phone" >
+                    <p class="text-danger" ng-if="kiemTra.phone">Vui lòng nhập số điện thoại</p>
+                </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label">Email</label>
+                    <input type="text" class="form-control" name="email" ng-model="userInput.email">
+                    <p class="text-danger" ng-if="kiemTra.email">Vui lòng nhập lại email</p>
+                </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label">Ngay sinh</label>
+                    <input type="date" class="form-control" name="NgaySinh" ng-model="userInput.NgaySinh">
+                    <p class="text-danger" ng-if="kiemTra.NgaySinh">Vui lòng nhập lại ngày sinh</p>
+                </div>
+
+            </div>
+
+            <div class="mb-3 me-3 d-flex justify-content-center">
+                <button type="submit" class="btn btn-succsess">Submit</button>
+            </div>
+        </form>
+
+    </div>
+</div>
