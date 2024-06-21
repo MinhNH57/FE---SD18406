@@ -1,0 +1,35 @@
+<div class="card mx-5 mt-5">
+    <div class="card-head mt-5">
+        <div class="mx-4"><h4>Danh sách sản phẩm</h4></div>
+    </div>
+
+    <div class="card-body">
+        <div class="text-end">
+            <a href="#!/sanpham/add" class="btn btn-primary">Thêm sản phẩm mới</a>
+        </div>
+        <table class="table table-bordered table-hover mt-4">
+            <thead>
+                <th class="text-center">STT</th>
+                <th class="text-center">Mã sản phẩm</th>
+                <th class="text-center">Tên sản phẩm</th>
+                <th class="text-center">Loại</th>
+                <th class="text-center">Giá bán</th>
+                <th class="text-center">Hành động</th>
+            </thead>
+
+            <tbody>
+                <tr ng-repeat="item in lstSP">
+                    <td class="text-center">{{$index + 1}}</td>
+                    <td class="text-center">{{item.ma_sp}}</td>
+                    <td class="text-center">{{item.ten}}</td>
+                    <td class="text-center">{{change(item.loai)}}</td>
+                    <td class="text-center">{{item.gia}}</td>
+                    <td class="text-center">
+                        <a href="#!/sanpham/chitiet/{{item.id}}" class="btn btn-light">Chi tiết</a>
+                        <button ng-click="Delete(item.id)" class="btn btn-danger">Xóa</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

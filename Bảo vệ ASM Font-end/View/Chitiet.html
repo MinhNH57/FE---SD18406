@@ -1,0 +1,39 @@
+<div class="card mt-5 mx-5">
+
+    <div class="card-head">
+        <h4>Chi tiết sản phẩm</h4>
+    </div>
+
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Mã sản phẩm</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" ng-model="input.ma_sp" disabled>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Tên sản phẩm</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" ng-model="input.ten" disabled>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Loại</label>
+                <select class="form-select" aria-label="Default select example" ng-model="input.loai" disabled>
+                    <option selected>Open this select menu</option>
+                    <option value="1">Đồ nam</option>
+                    <option value="2">Đồ nữ</option>
+                    <option value="3">Trẻ em</option>
+                  </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Giá</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" ng-model="input.gia" disabled>
+            </div>
+            <div>
+                <a href="#!/sanpham/chinhsua/{{ma}}" class="btn btn-primary">Chỉnh sửa</a>
+            </div>
+        </form>
+    </div>
+
+</div>

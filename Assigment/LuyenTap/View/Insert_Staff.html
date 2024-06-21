@@ -1,0 +1,29 @@
+<div class="card mt-5 mx-5">
+
+    <div class="card-head text-center">
+        <h4>{{title}}</h4>
+    </div>
+
+    <div class="card-body">
+        <form ng-submit="insert()">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ng-model="input.Name">
+            <p class="text text-danger" ng-if="kiemTra.hovaten">Vui lòng nhập lại họ tên</p>
+
+            <label for="exampleInputEmail1" class="form-label">Birdthday</label>
+            <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ng-model="input.NgaySinh">
+            <p class="text text-danger" ng-if="kiemTra.ngaysinh">Vui lòng nhập lại ngày sinh</p>
+
+            <label for="exampleInputEmail1" class="form-label">Address</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ng-model="input.DiaChi">
+            <p class="text text-danger" ng-if="kiemTra.diachi">Vui lòng nhập lại địa chỉ</p>
+
+            <label for="exampleInputEmail1" class="form-label">Number phone</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ng-model="input.Sodienthoai">
+            <p class="text text-danger" ng-if="kiemTra.sodienthoai">Vui lòng nhập lại số điện thoại</p>
+
+            <button  type="submit" class="btn btn-primary mt-5">Thêm</button>
+        </form>
+    </div>
+
+</div>

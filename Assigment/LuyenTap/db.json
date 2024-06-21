@@ -1,0 +1,46 @@
+{
+  "Staff": [
+    {
+      "hovaten": "Nguyễn Hồng Minh",
+      "NgaySinh": "2003-12-31T17:00:00.000Z",
+      "Diachi": "Thôn Vĩnh Lộc 1 - Phùng Xá - Thạch Thất -Hà Nội",
+      "SDT": "0981688583",
+      "id": "PH45057"
+    },
+    {
+      "id": "f2c4",
+      "hovaten": "Đặng Thị Dung",
+      "NgaySinh": "2004-10-15T17:00:00.000Z",
+      "Diachi": "Thôn Bàn Giữa - Hữu Bằng - Thạch Thất - Hà Nội",
+      "SDT": "0982565569"
+    },
+    {
+      "id": "9a5c",
+      "hovaten": "Nguyễn Hải Yến",
+      "NgaySinh": "2004-06-09T17:00:00.000Z",
+      "Diachi": "Thôn Vĩnh Lộc 3 - Phùng Xá - Thạch Thất - Hà Nội",
+      "SDT": "0912379888"
+    },
+    {
+      "hovaten": "Nguyễn Văn Quyết",
+      "NgaySinh": "1998-12-31T17:00:00.000Z",
+      "Diachi": "Vĩnh Lộc 1 - Phùng Xá - Thạch Thất - Hà Nội",
+      "SDT": "0878112543",
+      "id": "ad62"
+    },
+    {
+      "id": "682d",
+      "hovaten": "Phí Quỳnh Hoa",
+      "NgaySinh": "2004-12-01T17:00:00.000Z",
+      "Diachi": "Chàng Sơn - Thạch Thất - Hà Nội",
+      "SDT": "0162774500"
+    },
+    {
+      "id": "6eed",
+      "hovaten": "Nguyễn Khách Ly",
+      "NgaySinh": "2004-10-05T17:00:00.000Z",
+      "Diachi": "Giếng Bìm - Hữu Bằng - Thạch Thất - Hà Nội",
+      "SDT": "0912379111"
+    }
+  ]
+}

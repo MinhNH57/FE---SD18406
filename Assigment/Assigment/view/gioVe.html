@@ -1,0 +1,36 @@
+<div class="card mt-5 mx-3">
+    <div class="card-head">
+        <h6 class="text text-center mt-3">{{title}}</h6>
+    </div>
+
+    <div class="card-body">
+        <table class="table table-bordered table-hover">
+            <thead class="table-secondary">
+                <th class="text-center">STT</th>
+                <th class="text-center">Name</th>
+                <th class="text-center">CCCD</th>
+                <th class="text-center">Phone</th>
+                <th class="text-center">Email</th>
+                <th class="text-center">Birdthday</th>
+                <th class="text-center">Fly</th>
+                <th class="text-center">Actions</th>
+            </thead>
+
+            <tbody>
+                <tr ng-repeat="item in lstTickets">
+                    <td class="text-center">{{$index + 1}}</td>
+                    <td class="text-center">{{item.hovaten}}</td>
+                    <td class="text-center">{{item.CCCD}}</td>
+                    <td class="text-center">{{item.sodienthoai}}</td>
+                    <td class="text-center">{{item.email}}</td>
+                    <td class="text-center">{{item.NgaySinh | date: "dd-MM-yyyy"}}</td>
+                    <td class="text-center">{{getChuyenBay(item.Chuyenbay)}}</td>
+                    <td class="text-center">
+                        <a href="#!/Chitiet/{{item.id}}" class="btn btn-primary">Chi tiết</a>
+                        <button class="btn btn-danger" ng-click="DeleteTickets(item.id)">Xóa</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

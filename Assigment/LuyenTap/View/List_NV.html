@@ -1,0 +1,33 @@
+<div class="card mt-5">
+    <div class="card-head text-center">
+        <h4>{{title}}</h4>
+    </div>
+
+    <div class="card-body">
+        <a class="btn btn-primary my-2" href="#!/Insert_Staff">Thêm nhân viên mới</a>
+        <table class="table table-bordered">
+            <thead>
+                <th class="text text-center">STT</th>
+                <th class="text text-center">Họ và tên</th>
+                <th class="text text-center">Ngày sinh</th>
+                <th class="text text-center">Địa chỉ</th>
+                <th class="text text-center">Số điện thoại</th>
+                <th class="text text-center">Actions</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in lst_Staff">
+                    <td>{{$index + 1}}</td>
+                    <Td>{{item.hovaten}}</Td>
+                    <Td>{{item.NgaySinh | date: "dd/MM/yyyy"}}</Td>
+                    <Td>{{item.Diachi}}</Td>
+                    <Td>{{item.SDT}}</Td>
+                    <td class="text-center">
+                        <a class="btn btn-danger" ng-click="handleAction(item.id)">Delete</a>
+                        <a class="btn btn-warning" href="#!/Update_Staff/{{item.id}}">Update</a>
+                        <a class="btn btn-light" href="">Detail</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

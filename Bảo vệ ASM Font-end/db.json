@@ -1,0 +1,25 @@
+{
+  "QuanAos": [
+    {
+      "ma_sp": "SP015",
+      "ten": "Áo sơ mi",
+      "loai": "1",
+      "gia": 780000,
+      "id": "734c"
+    },
+    {
+      "id": "cae2",
+      "ma_sp": "SP092",
+      "ten": "Chân váy",
+      "loai": "2",
+      "gia": 178000
+    },
+    {
+      "ma_sp": "SD0213",
+      "ten": "Áo khoác Bomber",
+      "loai": "1",
+      "gia": 12000,
+      "id": "397e"
+    }
+  ]
+}

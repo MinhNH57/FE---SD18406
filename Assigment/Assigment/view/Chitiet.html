@@ -1,0 +1,104 @@
+
+<div class="card-body mt-5">
+    <form ng-submit="checkForm()">
+        <h5 class="card-title text-center">{{title}}</h5>
+                <div class="row m-4">
+                    <div class="col-12 col-md-4">
+                        <label for="exampleFormControlInput1" class="form-label">Họ và tên (Name) :</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="L.Messi" ng-model="input.HoTen" ng-disabled="!isEditable">
+                        <p class="text-danger" ng-if="kiemTra.hovaten">Vui lòng nhập lại tên</p>
+                    </div>
+    
+                    <div class="col-12  col-md-4">
+                        <label for="exampleFormControlInput2" class="form-label">CCCD/CMND (Citizen identification
+                            card)</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput2"
+                            placeholder="00120499583784" ng-model="input.CCCD" ng-disabled="!isEditable">
+                        <p class="text-danger" ng-if="kiemTra.CCCD">Vui lòng nhập lại số CCCD</p>
+                    </div>
+    
+                    <div class="col-12  col-md-4">
+                        <label for="exampleFormControlInput3" class="form-label">Email :</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput3"
+                            placeholder="namchu2003x1@gmail.com" ng-model="input.Email" ng-disabled="!isEditable" >
+                        <p class="text-danger" ng-if="kiemTra.email">Vui lòng nhập lại số email</p>
+                    </div>
+                </div>
+    
+                <div class="row m-4">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <label for="exampleFormControlInput5" class="form-label">Giới tính(Sex)</label>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" ng-model="input.GioiTinh" value="Nam" ng-disabled="!isEditable">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      Nam(Men)
+                                    </label>
+                                  </div>
+                            </div>
+    
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" ng-model="input.GioiTinh" value="Nu" ng-disabled="!isEditable">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      Nữ(Women)
+                                    </label>
+                                  </div>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <label for="exampleFormControlInput5" class="form-label">Số điện thoại(Phone number)</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="0981688583" ng-model="input.SDT" ng-disabled="!isEditable">
+                        <p class="text-danger" ng-if="kiemTra.sodienthoai">Vui lòng nhập lại số điện thoại</p>
+                    </div>
+    
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <label for="exampleFormControlInput6" class="form-label">Chọn chuyến bay(
+                            Select flight)</label>
+                        <select class="form-select" aria-label="Default select example" ng-model="selectedValue" ng-disabled="!isEditable">
+                            <option value="" disabled>Chọn chuyến bay</option>
+                            <option value="1">VietNam -- South Korea</option>
+                            <option value="2">VietNam -- ThaiLand</option>
+                            <option value="3">VietNam -- China</option>
+                        </select>
+                        <p class="text-danger" ng-if="kiemTra.Chuyenbay">Vui lòng chọn chuyến bay</p>
+                    </div>
+                </div>
+    
+                <div class="row m-4">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <label for="exampleFormControlInput6" class="form-label">Ngày sinh(Birthday)</label>
+                        <input type="date" class="form-control" id="exampleFormControlInput5" placeholder="0981688583" ng-model="input.NgaySinh" ng-disabled="!isEditable">
+                        <p class="text-danger" ng-if="kiemTra.NgaySinh">Vui lòng nhập lại ngày sinh</p>
+                    </div>
+    
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <label for="exampleFormControlInput6" class="form-label">Hành lý(
+                            Luggage)</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="Có thể để trống" ng-model="input.HanhLy" ng-disabled="!isEditable">
+                        <p class="text-danger" ng-if="kiemTra.Hanhly">Vui lòng nhập hành lý</p>
+                    </div>
+    
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <label for="exampleFormControlInput6" class="form-label">Hình thức thanh toán(
+                            Payments)</label>
+                        <select class="form-select" aria-label="Default select example" ng-model="selectedValue1" ng-disabled="!isEditable">
+                            <option value="" disabled>---Chọn(Select)---</option>
+                            <option value="1">Tiền mặt(Cash)</option>
+                            <option value="2">Chuyển khoản(Banking)</option>
+                            <option value="3">Sử dụng thẻ(Use card)</option>
+                        </select>
+                        <p class="text-danger" ng-if="kiemTra.Hinhthucthanhtoan">Vui lòng chọn hình thức thanh toán</p>
+                    </div>
+                </div>
+
+                <div class= "mb-3 me-3 d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary me-4" ng-click="Enable()">Chỉnh sửa thông tin</button>
+                    <button ng-click="UpdateTickets()" class="btn btn-danger " data-toggle="tooltip" title="Nếu không sử dụng được chức năng 'Cập nhật' thì hãy chọn 'Chỉnh sửa thông tin trước'">Cập nhật</button>
+                </div>
+    </form>
+</div>
